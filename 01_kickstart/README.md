@@ -1,6 +1,6 @@
-### Chart.yaml contains the metadata for the chart
-### values.yaml contains the different values for deployments, services and more.
-### templates directory has all the manifest files for the application
+##### Chart.yaml contains the metadata for the chart
+##### values.yaml contains the different values for deployments, services and more.
+##### templates directory has all the manifest files for the application
 
 --- 
 
