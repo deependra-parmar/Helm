@@ -1,0 +1,18 @@
+replicaCount: 3
+
+name: backend-deployment
+
+image:
+  repository: deependraparmar1/backend
+  tag: latest
+  pullPolicy: IfNotPresent
+  port: 4000
+
+service:
+  name: backend-service
+  type: ClusterIP
+  port: 80
+  targetPort: 4000
+  
+ingress:
+  enabled: false
