@@ -30,3 +30,10 @@ helm list -a
 ```
 helm uninstall myhelloworld
 ```
+
+---
+
+### In order to get the generated valid manifests from helm, run
+```
+helm install --generate-name --dry-run --debug .
+```
