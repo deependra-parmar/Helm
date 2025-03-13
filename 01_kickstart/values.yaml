@@ -10,9 +10,10 @@ image:
 
 service:
   name: backend-service
-  type: ClusterIP
+  type: NodePort
   port: 80
   targetPort: 4000
+  nodePort: 32001
   
 ingress:
   enabled: false

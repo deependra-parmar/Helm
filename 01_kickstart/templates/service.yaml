@@ -9,3 +9,9 @@ spec:
   ports:
   - port: {{ .Values.service.port }}
     targetPort: {{ .Values.service.targetPort }}
+
+    {{- with .Values.service }} # with block
+    {{- if .nodePort }} # if block
+    nodePort: {{ .nodePort }}
+    {{- end }} # End of If
+    {{- end }} # End of with
