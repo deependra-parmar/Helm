@@ -1,0 +1,12 @@
+environment:
+  databases:
+    - name: "mysql"
+      username: "root"
+      password: "password"
+    - name: "postgres"
+      username: "postgres"
+      password: "password"
+
+databases:
+  - "mysql"
+  - "postgres"
